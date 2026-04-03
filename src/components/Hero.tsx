@@ -71,7 +71,7 @@ export function Hero() {
         {/* H1 */}
         <motion.h1
           {...fadeUp(0.08)}
-          className="font-display font-black leading-[1.04] tracking-[-0.03em] max-w-[820px] mb-[18px]"
+          className="font-heading font-black leading-[1.04] tracking-[-0.03em] max-w-[820px] mb-[18px]"
           style={{ fontSize: "clamp(26px,6vw,72px)", color: "#f1f5f9" }}
         >
           Piloto fechado.{" "}

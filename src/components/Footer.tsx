@@ -56,7 +56,7 @@ export function Footer() {
             </div>
             <div>
               <div
-                className="font-display font-extrabold text-[14px] tracking-[.06em]"
+                className="font-heading font-extrabold text-[14px] tracking-[.06em]"
                 style={{ color: "#f1f5f9" }}
               >
                 Z-PAY

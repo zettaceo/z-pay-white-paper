@@ -27,7 +27,7 @@ export function SectionRegulatorio() {
         <AnimatedSection className="mb-8">
           <Chip>08 — POSTURA REGULATÓRIA</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em]"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em]"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Alinhamento{" "}

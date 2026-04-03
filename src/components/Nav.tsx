@@ -46,7 +46,7 @@ export function Nav() {
         </div>
         <div>
           <div
-            className="font-display font-extrabold text-[15px] tracking-[.06em] text-text"
+            className="font-heading font-extrabold text-[15px] tracking-[.06em] text-text"
             style={{ color: "#f1f5f9" }}
           >
             Z-PAY

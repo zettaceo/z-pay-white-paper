@@ -59,7 +59,7 @@ export function SectionFoundingClients() {
         <AnimatedSection className="mb-9">
           <Chip>05 — PROGRAMA FOUNDING CLIENTS</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em] mb-3"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Piloto fechado.{" "}
@@ -82,7 +82,7 @@ export function SectionFoundingClients() {
               >
                 <span className="text-[1.3rem] flex-shrink-0">{b.icon}</span>
                 <div>
-                  <div className="font-display font-black text-[15px] mb-1.5" style={{ color: "#ff7a18" }}>
+                  <div className="font-heading font-black text-[15px] mb-1.5" style={{ color: "#ff7a18" }}>
                     {b.title}
                   </div>
                   <div className="text-[13px] leading-[1.65]" style={{ color: "#8aa0bd" }}>
@@ -132,10 +132,10 @@ export function SectionFoundingClients() {
                 <div className="text-[11px] font-black uppercase tracking-[.12em] mb-1.5" style={{ color: "#8aa0bd" }}>
                   {p.plan}
                 </div>
-                <div className="font-display font-black leading-none mb-1" style={{ fontSize: 38, color: "#f1f5f9" }}>
+                <div className="font-heading font-black leading-none mb-1" style={{ fontSize: 38, color: "#f1f5f9" }}>
                   {p.price}
                   {p.period && (
-                    <span className="text-[14px] font-bold" style={{ color: "#8aa0bd", fontFamily: "var(--font-dm-sans)" }}>
+                    <span className="text-[14px] font-bold" style={{ color: "#8aa0bd", fontFamily: '"DM Sans", sans-serif' }}>
                       {p.period}
                     </span>
                   )}
@@ -235,14 +235,14 @@ export function SectionFoundingClients() {
             />
             <div className="flex gap-8 flex-wrap mb-7 items-center max-sm:flex-col max-sm:gap-4">
               <div>
-                <div className="font-display font-black leading-none" style={{ fontSize: 52, color: "#ff7a18" }}>
+                <div className="font-heading font-black leading-none" style={{ fontSize: 52, color: "#ff7a18" }}>
                   20
                 </div>
                 <div className="text-[13px] mt-1" style={{ color: "#8aa0bd" }}>vagas disponíveis</div>
               </div>
               <div className="w-px h-[60px] max-sm:hidden" style={{ background: "rgba(255,122,24,.2)" }} />
               <div>
-                <div className="font-display font-black leading-none" style={{ fontSize: 34, color: "#f1f5f9" }}>
+                <div className="font-heading font-black leading-none" style={{ fontSize: 34, color: "#f1f5f9" }}>
                   R$10.000
                 </div>
                 <div className="text-[13px] mt-1" style={{ color: "#8aa0bd" }}>Setup único — Founding Client</div>

@@ -27,7 +27,7 @@ export function SectionCompliance() {
         <AnimatedSection className="mb-9">
           <Chip>03 — ARQUITETURA DE COMPLIANCE</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em] mb-3"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Compliance por design,{" "}

@@ -39,7 +39,7 @@ export function SectionRoadmap() {
         <AnimatedSection className="mb-10">
           <Chip>07 — ROADMAP ESTRATÉGICO</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em] mb-3"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Construído para{" "}
@@ -93,7 +93,7 @@ export function SectionRoadmap() {
               {/* Content */}
               <div className="pt-2 flex-1">
                 <div
-                  className="font-display font-black text-[18px] mb-1.5"
+                  className="font-heading font-black text-[18px] mb-1.5"
                   style={{ color: "#f1f5f9" }}
                 >
                   {p.phase}

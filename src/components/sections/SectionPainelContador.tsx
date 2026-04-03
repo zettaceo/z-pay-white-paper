@@ -66,7 +66,7 @@ export function SectionPainelContador() {
         <AnimatedSection className="mb-8">
           <Chip>06 — PAINEL DO CONTADOR</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em] mb-3"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Canal parceiro{" "}
@@ -95,7 +95,7 @@ export function SectionPainelContador() {
                 }}
               >
                 <div
-                  className="font-display font-black text-[15px] mb-2"
+                  className="font-heading font-black text-[15px] mb-2"
                   style={{ color: r.positive ? "#ff7a18" : "#8aa0bd" }}
                 >
                   {r.title}
@@ -116,7 +116,7 @@ export function SectionPainelContador() {
                 className="rounded-[20px] p-[26px] h-full transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: "#0d1322", border: "1px solid rgba(255,255,255,0.055)" }}
               >
-                <div className="font-display font-black text-[17px] mb-1.5" style={{ color: "#f1f5f9" }}>
+                <div className="font-heading font-black text-[17px] mb-1.5" style={{ color: "#f1f5f9" }}>
                   {c.title}
                 </div>
                 <div className="text-[13.5px] leading-[1.65]" style={{ color: "#8aa0bd" }}>
@@ -187,7 +187,7 @@ export function SectionPainelContador() {
                     {m.badge}
                   </span>
                 </div>
-                <div className="font-display font-black text-[18px] mb-2" style={{ color: "#f1f5f9" }}>
+                <div className="font-heading font-black text-[18px] mb-2" style={{ color: "#f1f5f9" }}>
                   {m.name}
                 </div>
                 <div

@@ -37,7 +37,7 @@ export function SectionPosicionamento() {
         <AnimatedSection className="mb-9">
           <Chip>01 — POSICIONAMENTO</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em] mb-3"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             Não é um gateway.{" "}
@@ -96,7 +96,7 @@ export function SectionPosicionamento() {
                   {card.icon}
                 </div>
                 <div
-                  className="font-display font-black text-[17px] mb-1.5"
+                  className="font-heading font-black text-[17px] mb-1.5"
                   style={{ color: "#f1f5f9" }}
                 >
                   {card.title}

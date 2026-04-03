@@ -4,7 +4,7 @@
 @theme {
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "DM Mono", ui-monospace, monospace;
-  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
 
   --color-bg: #060912;
   --color-bg2: #090d18;
@@ -44,6 +44,7 @@ html {
 body {
   background: #060912;
   color: #f1f5f9;
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
 }
 

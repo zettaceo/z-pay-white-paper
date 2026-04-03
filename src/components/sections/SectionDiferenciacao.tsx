@@ -34,7 +34,7 @@ export function SectionDiferenciacao() {
         <AnimatedSection className="mb-7">
           <Chip>02 — DIFERENCIAÇÃO</Chip>
           <h2
-            className="font-display font-black leading-[1.08] tracking-[-0.03em]"
+            className="font-heading font-black leading-[1.08] tracking-[-0.03em]"
             style={{ fontSize: "clamp(22px,5vw,46px)", color: "#f1f5f9" }}
           >
             O que a Z-PAY não é.
@@ -67,7 +67,7 @@ export function SectionDiferenciacao() {
                 </span>
                 <div>
                   <div
-                    className="font-display font-black text-[15px] mb-1.5"
+                    className="font-heading font-black text-[15px] mb-1.5"
                     style={{
                       color: item.positive ? "#ff7a18" : "#8aa0bd",
                     }}
