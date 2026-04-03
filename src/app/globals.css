@@ -45,6 +45,8 @@ body {
   background: #060912;
   color: #f1f5f9;
   font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -83,4 +85,13 @@ body::before {
 
 .animate-fade-up {
   animation: fadeUp 0.6s ease both;
+}
+
+/* Explicit font classes — guaranteed regardless of Tailwind @theme resolution */
+.font-heading {
+  font-family: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: "DM Mono", ui-monospace, monospace;
 }

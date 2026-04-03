@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 const SITE_URL = "https://z-pay-eight.vercel.app";
@@ -38,20 +37,18 @@ export function Footer() {
             <div
               className="w-8 h-8 rounded-[9px] flex items-center justify-center overflow-hidden flex-shrink-0"
               style={{
-                background:
-                  "linear-gradient(145deg,rgba(255,122,24,.14),rgba(255,77,0,.06))",
+                background: "linear-gradient(145deg,rgba(255,122,24,.14),rgba(255,77,0,.06))",
                 border: "1px solid rgba(255,122,24,.24)",
               }}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={`${SITE_URL}/assets/logo/zpay-logo.png`}
                 alt="Z-PAY"
                 width={32}
                 height={32}
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
-                }}
+                onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
             </div>
             <div>

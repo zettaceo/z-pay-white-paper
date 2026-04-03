@@ -1,27 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 const SITE_URL = "https://z-pay-eight.vercel.app";
+const BRICOLAGE = '"Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif';
 
 const metaItems = [
-  { k: "Versão", v: "1.0 — Piloto Fechado", green: false },
-  { k: "Jurisdição", v: "BR · VARA Dubai (alinhamento)", green: false },
-  { k: "Acesso", v: "Restrito — 20 vagas", green: false },
-  { k: "Status", v: "● Em operação", green: true },
+  { k: "Versão",     v: "1.0 — Piloto Fechado",          green: false },
+  { k: "Jurisdição", v: "BR · VARA Dubai (alinhamento)",  green: false },
+  { k: "Acesso",     v: "Restrito — 20 vagas",            green: false },
+  { k: "Status",     v: "● Em operação",                  green: true  },
 ];
-
-import type { Easing } from "framer-motion";
-
-const EASE: Easing = [0.22, 1, 0.36, 1];
-
-function fadeUp(delay: number) {
-  return {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, delay, ease: EASE },
-  };
-}
 
 export function Hero() {
   const handleCTAClick = () => {
@@ -40,20 +27,20 @@ export function Hero() {
       <div
         className="absolute pointer-events-none"
         style={{
-          top: 60,
-          left: -100,
-          right: -100,
-          height: 400,
+          top: 60, left: -100, right: -100, height: 400,
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 40%, rgba(255,122,24,.08) 0%, transparent 100%)",
+            "radial-gradient(ellipse 60% 50% at 50% 40%,rgba(255,122,24,.08) 0%,transparent 100%)",
         }}
       />
 
       <div className="relative z-10">
         {/* Eyebrow */}
-        <motion.div {...fadeUp(0)} className="inline-flex items-center gap-2 mb-7">
+        <div
+          className="inline-flex items-center gap-2 mb-7 animate-fade-up"
+          style={{ animationDelay: "0ms" }}
+        >
           <div
-            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[12px] font-black tracking-[.10em] uppercase"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-[7px] text-[12px] font-black tracking-[.10em] uppercase"
             style={{
               background: "rgba(255,122,24,.09)",
               border: "1px solid rgba(255,122,24,.20)",
@@ -61,42 +48,45 @@ export function Hero() {
             }}
           >
             <span
-              className="w-[7px] h-[7px] rounded-full animate-blink flex-shrink-0"
+              className="w-[7px] h-[7px] rounded-full flex-shrink-0 animate-blink"
               style={{ background: "#ff7a18", boxShadow: "0 0 10px rgba(255,122,24,.35)" }}
             />
             PROGRAMA FOUNDING CLIENTS · ACESSO RESTRITO
           </div>
-        </motion.div>
+        </div>
 
         {/* H1 */}
-        <motion.h1
-          {...fadeUp(0.08)}
-          className="font-heading font-black leading-[1.04] tracking-[-0.03em] max-w-[820px] mb-[18px]"
-          style={{ fontSize: "clamp(26px,6vw,72px)", color: "#f1f5f9" }}
+        <h1
+          className="font-black leading-[1.04] tracking-[-0.03em] max-w-[820px] mb-[18px] animate-fade-up"
+          style={{
+            fontFamily: BRICOLAGE,
+            fontSize: "clamp(26px,6vw,72px)",
+            color: "#f1f5f9",
+            animationDelay: "80ms",
+          }}
         >
           Piloto fechado.{" "}
-          <em className="not-italic" style={{ color: "#ff7a18" }}>
-            20 vagas.
-          </em>{" "}
+          <em className="not-italic" style={{ color: "#ff7a18" }}>20 vagas.</em>{" "}
           Condições vitalícias.
-        </motion.h1>
+        </h1>
 
         {/* Sub */}
-        <motion.p
-          {...fadeUp(0.16)}
-          className="max-w-[640px] mb-9 text-[17px] leading-[1.75]"
-          style={{ color: "#8aa0bd" }}
+        <p
+          className="max-w-[640px] mb-9 leading-[1.75] animate-fade-up"
+          style={{ fontSize: 17, color: "#8aa0bd", animationDelay: "160ms" }}
         >
           Documento técnico e comercial do programa de acesso restrito à Z-PAY
           — a camada de orquestração de pagamentos do ecossistema ZETTA,
           projetada para liquidação rastreável entre rails fiat e digitais.
-        </motion.p>
+        </p>
 
         {/* Meta grid */}
-        <motion.div
-          {...fadeUp(0.22)}
-          className="grid grid-cols-2 max-w-[520px] mb-9 rounded-2xl overflow-hidden"
-          style={{ border: "1px solid rgba(255,255,255,0.055)" }}
+        <div
+          className="grid grid-cols-2 max-w-[520px] mb-9 rounded-2xl overflow-hidden animate-fade-up"
+          style={{
+            border: "1px solid rgba(255,255,255,0.055)",
+            animationDelay: "220ms",
+          }}
         >
           {metaItems.map((item, i) => (
             <div
@@ -105,7 +95,7 @@ export function Hero() {
               style={{
                 background: "#0d1322",
                 borderRight: i % 2 === 0 ? "1px solid rgba(255,255,255,0.055)" : undefined,
-                borderBottom: i < 2 ? "1px solid rgba(255,255,255,0.055)" : undefined,
+                borderBottom: i < 2     ? "1px solid rgba(255,255,255,0.055)" : undefined,
               }}
             >
               <div
@@ -122,26 +112,18 @@ export function Hero() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
 
         {/* CTAs */}
-        <motion.div {...fadeUp(0.28)} className="flex gap-3 flex-wrap">
+        <div className="flex gap-3 flex-wrap animate-fade-up" style={{ animationDelay: "280ms" }}>
           <button
             onClick={handleCTAClick}
-            className="inline-flex items-center text-[14px] font-black px-6 py-3.5 rounded-[13px] cursor-pointer transition-all duration-200"
+            className="inline-flex items-center text-[14px] font-black px-6 py-[13px] rounded-[13px] cursor-pointer transition-all duration-200 hover:-translate-y-0.5"
             style={{
               background: "linear-gradient(135deg,#ff7a18,#ff4d00)",
               color: "#000",
               border: "none",
               boxShadow: "0 10px 34px rgba(255,122,24,.18)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 12px 40px rgba(255,122,24,.28)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "";
-              e.currentTarget.style.boxShadow = "0 10px 34px rgba(255,122,24,.18)";
             }}
           >
             Solicitar uma vaga
@@ -150,24 +132,16 @@ export function Hero() {
             href={SITE_URL}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center text-[14px] font-bold px-5 py-3.5 rounded-[13px] no-underline transition-all duration-200"
+            className="inline-flex items-center text-[14px] font-bold px-5 py-[13px] rounded-[13px] no-underline transition-all duration-200 hover:text-[#ff7a18]"
             style={{
               background: "transparent",
               border: "1px solid rgba(255,255,255,0.10)",
               color: "#f1f5f9",
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255,122,24,.4)";
-              e.currentTarget.style.color = "#ff7a18";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.10)";
-              e.currentTarget.style.color = "#f1f5f9";
-            }}
           >
             Página institucional →
           </a>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
