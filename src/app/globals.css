@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #060912;
+  --color-bg2: #090d18;
+  --color-card: #0d1322;
+  --color-card2: #101828;
+  --color-accent: #ff7a18;
+  --color-accent2: #ff4d00;
+  --color-teal: #06b6d4;
+  --color-purple: #818cf8;
+  --color-amber: #fbbf24;
+  --color-text: #f1f5f9;
+  --color-text2: #8aa0bd;
+  --color-text3: #445a78;
+}
+
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #060912;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-blink {
+  animation: blink 2s ease infinite;
+}
+
+.animate-blink-slow {
+  animation: blink 2.5s ease infinite;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease both;
+}
